@@ -25,42 +25,8 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
-        <compilerSettings>
-          <option name="additionalArguments" value="-Xallow-no-source-files" />
-        </compilerSettings>
-        <compilerArguments>
-          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
-          <option name="classpath" value="$MODULE_DIR$/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/a40e2e0c02109c1fd8b96b6fcf9fc611/jetified-http-2.2.1.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/a1a2ee17af55b78f375d797ed8695d03/jetified-sun-common-server.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/906801bd8eedd543c2fcbd8760c214dc/jetified-kotlin-android-extensions-runtime-1.3.61.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/a6ee74fb178b3ea5a892efce09fbf14f/jetified-kotlin-stdlib-jdk7-1.3.61.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/6f907c41a73a7d596b4c25c4d813ad1d/jetified-core-ktx-1.5.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/53deaac5e6004695b15d767f38a441de/jetified-kotlin-stdlib-1.4.31.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/2df1ccf55c9db202f7113cc1b6f28df9/jetified-kotlin-stdlib-common-1.4.31.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/37b2db17f3474094fa0bbcb93412368e/jetified-annotations-13.0.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/08eea8d280959f42be086985bbb8fa45/constraintlayout-2.0.4-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/7bae3a9bec4912a73da4ccb81fcd3a6a/appcompat-1.3.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/62ca17f92ac739e86ce0b7a0fb0426a8/fragment-1.3.4-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/c6fe6002ec6310a992bc7f855d3b9c4a/jetified-activity-1.2.3-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/9cb9798d16453c4962f5d151f0f2f5b9/jetified-appcompat-resources-1.3.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/675fb8ac46037f96bf818653017729a6/drawerlayout-1.0.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/6e36c5267b3ca51fdf75177b25e90817/viewpager-1.0.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/3f597a675e0dced4e69dc6514a92c184/loader-1.0.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/986f0d3a3f0530e7b32b2c5870ddafc1/vectordrawable-animated-1.1.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/efd46c4b867c28b3b123bfd6b2261fe1/vectordrawable-1.1.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/082ba1b7e0063ff8eab2fc487b8009d8/customview-1.0.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/0961e51c1098dc64e4d2b76ab7df5f0c/core-1.5.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/70941b0fa6d94b1ca397a5bf2ddcb0af/cursoradapter-1.0.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/8dab38cf34188b8b0c0f6e4712f5e653/jetified-lifecycle-viewmodel-savedstate-2.3.1-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/2ddc9b2cb7438f24d97b345bbb4bee5f/jetified-savedstate-1.1.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/13aef824ffa08377749326162cab7914/lifecycle-runtime-2.3.1-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/688be209e8dd0994538ba19405345893/versionedparcelable-1.1.1-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/b4fa6f737581b25eb3682d347c50f80c/lifecycle-viewmodel-2.3.1-api.jar:/home/pusdakom/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/d5ab8b4fb10d3f1d5cbf518c9cd0e4a6/lifecycle-livedata-2.0.0-api.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/ba39369a24fdb25726d5db9d82b2b9a8/lifecycle-livedata-core-2.3.1-api.jar:/home/pusdakom/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.3.1/fc466261d52f4433863642fb40d12441ae274a98/lifecycle-common-2.3.1.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/6e7e67f9dce83fc39059b5623db3f705/core-runtime-2.1.0-api.jar:/home/pusdakom/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/cd3fca000496694d0c8706c90d9c1dc0/interpolator-1.0.0-api.jar:/home/pusdakom/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.2.0/57136ff68ee784c6e19db34ed4a175338fadfde1/annotation-1.2.0.jar:/home/pusdakom/.gradle/caches/transforms-2/files-2.1/d3a528b29ddf5c50935744cfc1983dda/jetified-annotation-experimental-1.0.0-api.jar:/home/pusdakom/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/2.0.4/1f001d7db280a89a6c26b26a66eb064bb6d5efeb/constraintlayout-solver-2.0.4.jar:/home/pusdakom/Android/Sdk/platforms/android-29/android.jar" />
-          <option name="noStdlib" value="true" />
-          <option name="noReflect" value="true" />
-          <option name="moduleName" value="app_debug" />
-          <option name="languageVersion" value="1.3" />
-          <option name="apiVersion" value="1.3" />
-          <option name="pluginOptions">
-            <array>
-              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
-              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
-              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
-            </array>
-          </option>
-          <option name="pluginClasspaths">
-            <array>
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20181211/216c2e14b070f334479d800987affe4054cd563f/trove4j-1.0.20181211.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.61/54ca7c214a5cd73cd887a42002266e25440097f2/kotlin-android-extensions-1.3.61.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.61/c35c0833d5a1e3d229359758482c480306724618/kotlin-compiler-embeddable-1.3.61.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.3.61/4de83e41a92c8395d89ab2e81d26b788ba163824/kotlin-daemon-embeddable-1.3.61.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.61/2e07c9a84c9e118efb70eede7e579fd663932122/kotlin-reflect-1.3.61.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.61/e5feb39c8de63dcbdc1154b34ca4413874231605/kotlin-script-runtime-1.3.61.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.61/65abb71d5afb850b68be03987b08e2c864ca3110/kotlin-stdlib-common-1.3.61.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.61/4702105e97f7396ae41b113fdbdc180ec1eb1e36/kotlin-stdlib-1.3.61.jar" />
-              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
-            </array>
-          </option>
-          <option name="errors">
-            <ArgumentParseErrors />
-          </option>
-        </compilerArguments>
+      <configuration version="3" useProjectSettings="false">
+        <compilerSettings />
       </configuration>
     </facet>
   </component>
@@ -69,15 +35,15 @@
     <output-test url="file://$MODULE_DIR$/build/intermediates/javac/debugUnitTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/debug/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/debug/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/debug/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/debug" type="java-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/ap_generated_sources/debugAndroidTest/out" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/debugAndroidTest/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/debugAndroidTest/out" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/debugAndroidTest/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/debug" type="java-test-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/ap_generated_sources/debugUnitTest/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
@@ -124,7 +90,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 29 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
