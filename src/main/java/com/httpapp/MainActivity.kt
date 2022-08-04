@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
     private var serverUp = false
     var port = 1111
 
-    var dir = "/";
-    var rootpath = "/sdcard/www/";
+    var dir = "/"
+    var rootpath = ""
     private val TAG = "Permission"
     private val DIR_CODE = 99
 
@@ -70,13 +70,18 @@ class MainActivity : AppCompatActivity() {
             //println("Create folder")
             val path = this.getExternalFilesDir(null)
             //val path = this.filesDir
-            //val folder = File(path, "www")
-            val folder = File(rootpath)
+            val folder = File(path, "www")
+            //val folder = File(rootpath)
             if (!folder.exists()) {
                 folder.mkdirs()
+                rootpath = path.toString()+"/www"
+                println("Create Folder "+path.toString()+"/www")
                 println(folder.exists()) // u'll get true
             }else{
-                //println("Folder already")
+                if(rootpath.equals("")){
+                    rootpath = path.toString()+"/www"
+                }
+                println("Folder already")
             }
 
         }
@@ -100,7 +105,29 @@ class MainActivity : AppCompatActivity() {
                 stopServer()
                 false
             }
+        }
 
+        resetButton.setOnClickListener {
+            val builder = AlertDialog.Builder(this@MainActivity)
+            builder.setMessage("Reset configuration?")
+                .setCancelable(false)
+                .setPositiveButton("Yes") { dialog, id ->
+                    val path = this.getExternalFilesDir(null)
+                    dir = "/"
+                    port = 1111
+                    rootpath = path.toString()+"/www"
+
+                    txtPort.text = "Port: "+port
+                    txtPath.text = "Path: "+rootpath
+
+                    saveData()
+                }
+                .setNegativeButton("No") { dialog, id ->
+                    // Dismiss the dialog
+                    dialog.dismiss()
+                }
+            val alert = builder.create()
+            alert.show()
         }
     }
     private fun saveData(){
@@ -217,12 +244,14 @@ class MainActivity : AppCompatActivity() {
     private fun sendResponse(httpExchange: HttpExchange, responseText: String){
         val os = httpExchange.responseBody
         if(responseText.equals("")) {
-            var inputStream = "Hello World."
+            var inputStream = ""
             if (dir.equals("/")) {
                 httpExchange.sendResponseHeaders(200, inputStream.length.toLong())
                 os.write(inputStream.toByteArray())
             } else {
-                var file = File(rootpath, dir)
+                dir = dir.replace("/","")
+                var file = File(rootpath,dir)
+                //println("Send response: "+rootpath+"/"+dir)
                 if (file.exists()) {
                     httpExchange.sendResponseHeaders(200, file.length())
                     os.write(file.readBytes(), 0, file.readBytes().size)
@@ -245,6 +274,7 @@ class MainActivity : AppCompatActivity() {
         run {
             // Get request method
             dir = URLDecoder.decode(httpExchange.requestURI.toString(), "UTF-8")
+            //println("File Handler: "+dir.toString())
             sendResponse(httpExchange,"")
         }
     }
